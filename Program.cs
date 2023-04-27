@@ -9,8 +9,16 @@ namespace H23_Dev_Info_Examen2
         public static void Main(string[] args)
         {
             var liste = new List<int>();
-            var moyenne = OperationsMathematiques.CalculerMoyenne(liste);
-            Console.WriteLine(moyenne);
+            if(moyenne == -1)
+            {
+                console.WriteLine("données invalides");
+            }
+            else
+            {
+                var moyenne = OperationsMathematiques.CalculerMoyenne(liste);
+                Console.WriteLine(moyenne);
+            }
+            
         }
     }
 }
