@@ -9,8 +9,18 @@ namespace H23_Dev_Info_Examen2
     {
         public static double CalculerMoyenne(List<int> valeurs)
         {
-            double moyenne = valeurs.Average();
-            return moyenne;                                          
+            if(valeurs != null || valeurs.Count != 0 )
+            {
+                double moyenne = valeurs.Average();
+                return moyenne; 
+            }
+            else
+            {
+                double moyenne = -1;
+                return moyenne;
+            }
+            
+                                                     
         }
     }
 }
